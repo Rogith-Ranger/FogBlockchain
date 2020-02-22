@@ -23,9 +23,6 @@ contract StoreData {
         mainData[_mac].push(currentData(_ldata));
 		emit addEvent(_mac);
     }
-    function getMacs() public returns(string) {
-        return macCount.key;
-    }
     function getCount(string memory _mac) public returns(uint){
         return macCount[_mac];
     }
